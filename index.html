@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Legal Pages — Auto Video Generator</title>
+<title>Auto Video Generator</title>
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -19,16 +19,72 @@
     body { color: #e4e4e4; background: #121212; }
     a { color: #7ab7ff; }
   }
-  h1 { font-size: 1.4rem; }
+  h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+  .tagline { color: #666; font-size: 1rem; margin-bottom: 2rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.25rem; }
+  ol, ul { padding-left: 1.3rem; }
   li { margin: 0.4rem 0; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid #ddd; font-size: 0.9rem; }
+  @media (prefers-color-scheme: dark) { footer { border-top-color: #333; } }
+  footer a { margin-right: 1.25rem; }
 </style>
 </head>
 <body>
-<h1>Legal Pages — Auto Video Generator</h1>
-<p>Compliance pages for third-party developer platform integrations (YouTube, TikTok).</p>
-<ul>
-  <li><a href="privacy-policy.html">Privacy Policy</a></li>
-  <li><a href="terms-of-service.html">Terms of Service</a></li>
-</ul>
+
+<h1>Auto Video Generator</h1>
+<p class="tagline">An automated short-form video pipeline, built and run by an independent developer.</p>
+
+<p>
+  Auto Video Generator is a personal software project that produces short,
+  factual "did you know?" videos and publishes them automatically to social
+  media. Every video starts from a single topic and ends as a fully edited,
+  narrated, subtitled clip — with no manual editing step in between.
+</p>
+
+<h2>What it does</h2>
+<p>
+  Twice a day, the pipeline picks a new topic it hasn't covered before,
+  writes a short script around one surprising, verifiable fact, and turns
+  that script into a finished vertical video: AI-generated narration,
+  synchronized captions, and background footage matched to the topic.
+  The result is uploaded straight to the project's own YouTube and TikTok
+  accounts.
+</p>
+
+<h2>How it works</h2>
+<p>The pipeline is fully automated, end to end:</p>
+<ol>
+  <li><strong>Topic selection</strong> — a language model proposes a fact-based
+    topic that hasn't been used before, checked against a running history to
+    avoid repeats.</li>
+  <li><strong>Script writing</strong> — a short narration script is drafted,
+    then automatically reviewed for coherence and re-checked against a live
+    web search to confirm the central fact is accurate.</li>
+  <li><strong>Voice &amp; captions</strong> — the script is turned into
+    narration audio, and captions are generated in sync with the voice
+    track.</li>
+  <li><strong>Footage &amp; assembly</strong> — background video clips are
+    selected from stock-footage libraries to match the script, and the whole
+    video is rendered as a single file.</li>
+  <li><strong>Publishing</strong> — the finished video is uploaded to the
+    project's own social accounts, with a title, description, and hashtags
+    generated for each platform.</li>
+</ol>
+
+<h2>About this project</h2>
+<p>
+  This is a personal, non-commercial project: it has a single owner, no
+  public user accounts, and no sign-up or login of any kind. It exists to
+  automate content the owner already wanted to post to their own accounts,
+  not to offer a service to third parties. See the
+  <a href="privacy-policy.html">Privacy Policy</a> for details on what data
+  the project handles.
+</p>
+
+<footer>
+  <a href="privacy-policy.html">Privacy Policy</a>
+  <a href="terms-of-service.html">Terms of Service</a>
+</footer>
+
 </body>
 </html>
